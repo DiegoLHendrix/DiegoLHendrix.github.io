@@ -5,20 +5,20 @@
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-    width: 40%;
+    width: 100%;
     max-height: 90%;
   }
 
   h1 {
-    color: royalblue;
+    color: lightskyblue;
     font-size: 53px;
     margin: 0;
-    font-family: 'Coolvetica';
+    font-family: 'Coolvetica', serif;
     font-weight: 400;
 
     &::before {
       content: '<h1>';
-      font-family: "La Belle Aurore";
+      font-family: "La Belle Aurore", serif;
       color: gold;
       font-size: 18px;
       position: absolute;
@@ -29,7 +29,7 @@
 
     &::after {
       content: '<h1/>';
-      font-family: "La Belle Aurore";
+      font-family: "La Belle Aurore", serif;
       color: gold;
       font-size: 18px;
       position: absolute;
@@ -39,16 +39,6 @@
       opacity: 0.6;
     }
 
-    img {
-      width: 100px;
-      margin: -25px;
-      padding-left: 20px;
-      padding-right: 10px;
-      opacity: 0;
-      height: auto;
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
-    }
   }
 
   h2 {
@@ -61,7 +51,8 @@
     animation: fadeIn 1s 1.8s backwards;
   }
 
-  .flat-button {
+  .contact-button,
+  .about-button {
     color: gold;
     font-size: 13px;
     font-weight: 400;
