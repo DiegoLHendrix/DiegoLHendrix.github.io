@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import LogoD from '../../../MyImages/LogoD.png'
+import LogoD from '../../../assets/images/LogoD.png'
 import './index.scss'
 
 const Logo = () => {
@@ -12,8 +12,6 @@ const Logo = () => {
                 src={LogoD}
                 alt={'D'}
             />
-
-
         </div>
     )
 }
