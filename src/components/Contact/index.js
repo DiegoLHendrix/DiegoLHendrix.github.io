@@ -6,7 +6,8 @@ import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const form = useRef(); // Add parentheses here
+    const form = useRef();
+    const strContact = "Contact me"
 
     useEffect(() => {
         setTimeout(() => {
@@ -14,20 +15,8 @@ const Contact = () => {
         }, 4000)
     }, []);
 
-    const sendEmail = (e) => {
-        e.preventDefault()
+    const sendEmail = () => {
 
-        emailjs
-            .sendForm('service_c671z6z', 'template_mgkiiej', form.current, 'TcNEJnkDzOmLIb3kg')
-            .then(
-                () => {
-                    alert('Message successfully sent!')
-                    window.location.reload(false)
-                },
-                () => {
-                    alert('Failed to send the message, please try again')
-                }
-            )
     }
 
     return (
@@ -37,12 +26,14 @@ const Contact = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+                            strArray={strContact.split("")}
                             idx={15}
                         />
                     </h1>
                     <p>
-                        I am seeking opportunities in embedded systems engineering, firmware engineering, and/or electrical engineering. Please feel free to reach out to me with any inquiries via the provided contact methods.
+                        I am seeking opportunities in embedded systems engineering, firmware engineering, and/or
+                        electrical engineering. Please feel free to reach out to me with any inquiries via the provided
+                        contact methods.
                     </p>
                     <div className={'contact-form'}>
                         <form ref={form} onSubmit={sendEmail}>
