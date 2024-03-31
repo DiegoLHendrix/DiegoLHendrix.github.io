@@ -41,6 +41,7 @@ const Home = () => {
                 <h2>Embedded Software Engineer</h2>
                 <Link to={"/About"} className={'about-button'}>ABOUT ME</Link>
                 <Link to={"/Contact"} className={'contact-button'}>CONTACT ME</Link>
+                <Link to={"/Test"} className={'test-button'}>TEST</Link>
             </div>
             <Logo />
         </div>
