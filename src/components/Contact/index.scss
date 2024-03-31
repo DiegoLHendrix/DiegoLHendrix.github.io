@@ -32,11 +32,15 @@
     }
   }
 
+  .custom-input::placeholder {
+    color: white; /* Change placeholder color to blue */
+  }
+
   input[type='text'],
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: royalblue;
     height: 50px;
     font-size: 16px;
     color: white;
@@ -47,7 +51,7 @@
   textarea{
     width: 100%;
     border: 0;
-    background: #115173;
+    background: royalblue;
     height: 50px;
     font-size: 16px;
     color: white;
@@ -58,17 +62,29 @@
 
   .flat-button {
     color: #ffd700;
+    background: 0 0;
     font-size: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
     border: 1px solid #ffd700;
-    float: left;
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
     float: right;
-    text-align: center;
-    margin-right: 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: gold;
+      color: #333;
+    }
   }
+}
+
+.contact-info
+{
+  font-size: 50px;
+  left: 150%;
+  bottom: 60%;
+  color: gold;
+  position: absolute;
+  width: 100%;
 }
