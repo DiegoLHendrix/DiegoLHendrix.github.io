@@ -1,6 +1,6 @@
-import './index.scss'
+import './index.scss';
 import AnimatedLetters from "../AnimatedLetters";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 const Test = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -12,21 +12,20 @@ const Test = () => {
         }, 4000);
     }, []);
 
-    return(
-        <>
-            <div className={'container text-page'}>
-                <div className={'text-zone'}>
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={strTest.split("")}
-                            idx={15}
-                        />
-                    </h1>
-                </div>
-            </div>
-        </>
-    )
-}
+    return (
+        <div className={'container text-page'}>
+            <div className={'text-zone'}>
+                <h1>
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={strTest.split("")}
+                        idx={15}
+                    />
+                </h1>
 
-export default Test
+            </div>
+        </div>
+    );
+};
+
+export default Test;

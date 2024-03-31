@@ -14,14 +14,14 @@ import altiumSvg from '../../assets/icons/altium_designer.svg'
 import cppSvg from '../../assets/icons/cpp.svg'
 import cSvg from '../../assets/icons/c.svg'
 
-
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const strAbout = "About me"
-    const strEducation = "Education History"
-    const strSkills = "Skills"
-    const strPersonal = "Personal History"
     const strSelf = "Self Introduction:"
+    const strEducation = "Education"
+    const strSkills = "Skills"
+    const strPersonal = "Personal"
+    const strHobbies = "Hobbies"
 
     useEffect(() => {
         setTimeout(() => {
@@ -62,18 +62,18 @@ const About = () => {
                         </p>
                     </h2>
 
-                    <h2 className={'title-education-history'}>
+                    <h2 className={'title-education'}>
                         <AnimatedLetters
                             letterClass={letterClass}
                             //takes string splits each character into a separate char then adds it to the array
                             strArray={strEducation.split("")}
                             idx={15}
                         />
-                        <p className={'education-history'}>
+                        <p className={'education'}>
                             <ul>
                                 <li>Bachelor of Science in Computer Engineering Technology.</li>
                                 <li>Expected Graduation May 2026.</li>
-                                <li>Dean's List Fall 2023</li>
+                                <li>Dean's List Fall 2023.</li>
                                 <li>
                                     <strong>Current Courses:</strong> Microcontroller Systems, Real-Time Operating
                                     Systems, Modern Audio Production.
@@ -84,6 +84,9 @@ const About = () => {
                                     Solving 1 Lecture and Lab, DC/AC Circuits Lecture and Lab, Electronic Devices
                                     Lecture and Lab, Computational Problem Solving 2, Fundamentals of Audio Engineering,
                                     Networking Technologies.
+                                </li>
+                                <li>
+                                    <strong>Extracurriculars:</strong> Firmware Team in Electric Vehicle Team.
                                 </li>
                             </ul>
                         </p>
@@ -96,10 +99,10 @@ const About = () => {
                             strArray={strSkills.split("")}
                             idx={15}
                         />
-                        <p className={'skills'}>
+                        <p className={'text-about'}>
                             <ul>
                                 <li>
-                                    <strong>Languages:</strong> C, C++, Cmake, Python, VHDL
+                                    <strong>Languages:</strong> C, C++, Cmake, Python, VHDL.
                                 </li>
                                 <li>
                                     <strong>Software:</strong> Altium Designer, Git, Github, FreeRTOS, CAN and CANopen,
@@ -131,13 +134,29 @@ const About = () => {
                             strArray={strPersonal.split("")}
                             idx={15}
                         />
-                        <p className={'personal'}>
+                        <p className={'text-about'}>
                             <ul>
                                 <li>Born in Massachusetts on November 2nd, 2002.</li>
                                 <li>From 2002-2010 lived in Santo Domingo, Dominican Republic.</li>
                                 <li>Moved to Massachusetts in 2010.</li>
                                 <li>Graduated from Malden Catholic High School in 2021.</li>
                                 <li>Started atteding Rochester Institute of Technology in 2021.</li>
+                            </ul>
+                        </p>
+                    </h2>
+
+                    <h2 className={'title-hobbies'}>
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            //takes string splits each character into a separate char then adds it to the array
+                            strArray={strHobbies.split("")}
+                            idx={15}
+                        />
+                        <p className={'text-about'}>
+                            <ul>
+                                <li>Music</li>
+                                <li>Movies and TV</li>
+                                <li>Programming and problem solving</li>
                             </ul>
                         </p>
                     </h2>
@@ -176,6 +195,7 @@ const About = () => {
                 <div className={'img-personal-container'}/>
                 <div className={'img-flag-container'}/>
                 <div className={'img-self-container'}/>
+                <div className={'img-hobbies-container'}/>
                 <ul className={'text-credit'}>Photo by @kendall_dirks on Instagram</ul>
             </div>
             <Loader type={"pacman"} active/>

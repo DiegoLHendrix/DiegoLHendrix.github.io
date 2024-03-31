@@ -28,7 +28,7 @@
   background-size: cover; /* Cover the entire container with the image */
   background-position: center; /* Center the image within the container */
   top: 550px;
-  left: 1230px;
+  left: 1250px;
 }
 
 .img-flag-container
@@ -43,7 +43,30 @@
   left: 1250px;
 }
 
-.title-self-intro
+@keyframes hobbiesAnimation {
+  0% { background-image: url('../../assets/images/Hendrix1.jpg'); }
+  33% { background-image: url('../../assets/images/whiplash.jpg'); }
+  66% { background-image: url('../../assets/images/ATLA.jpg'); }
+  100% { background-image: url('../../assets/images/Hendrix1.jpg'); }
+}
+
+.img-hobbies-container
+{
+  position: absolute;
+  width: 400px; /* Set the width of the container */
+  height: 400px; /* Set the height of the container */
+  background-size: cover; /* Cover the entire container with the image */
+  background-position: center; /* Center the image within the container */
+  margin-top: 2000px;
+  left: 1250px;
+  animation: hobbiesAnimation 10s infinite; /* Adjust duration and iteration count as needed */
+}
+
+.title-self-intro,
+.title-education,
+.title-skills,
+.title-personal,
+.title-hobbies
 {
   font-size: 40px;
   font-family: sans-serif;
@@ -54,60 +77,21 @@
     font-size: 25px;
     font-family: sans-serif;
     width: 100%;
-  }
-}
 
-.title-education-history
-{
-  font-size: 40px;
-  font-family: sans-serif;
-  color: gold;
-
-  li
-  {
-    font-size: 25px;
-    font-family: sans-serif;
-    width: 150%;
-
-    strong
+    li
     {
-      color: gold;
+      font-size: 25px;
+      font-family: sans-serif;
+      width: 150%;
+
+      strong
+      {
+        color: gold;
+      }
     }
   }
 }
 
-.title-skills
-{
-  font-size: 40px;
-  font-family: sans-serif;
-  color: gold;
-
-  li
-  {
-    font-size: 25px;
-    font-family: sans-serif;
-    width: 150%;
-
-    strong
-    {
-      color: gold;
-    }
-  }
-}
-
-.title-personal
-{
-  font-size: 40px;
-  font-family: sans-serif;
-  color: gold;
-
-  li
-  {
-    font-size: 25px;
-    font-family: sans-serif;
-    width: 150%;
-  }
-}
 
 .stage-cube-cont
 {
