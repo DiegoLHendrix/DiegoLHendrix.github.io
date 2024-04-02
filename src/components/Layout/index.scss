@@ -62,7 +62,7 @@
 
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 7%;
     top: 50%;
     transform: translateY(-50%);
     width: 35%;
@@ -104,13 +104,26 @@
       }
     }
 
+    h2
+    {
+      font-size: 40px;
+      font-family: sans-serif;
+      color: gold;
+
+      strong
+      {
+        color: gold;
+      }
+    }
+
     p {
-      font-size: 13px;
+      font-size: 25px;
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;
-      max-width: fit-content;
+      //max-width: fit-content;
       animation: pulse 1s;
+      width: 150%;
 
       //Adds delay to paragraph withing each <p></p>
       &:nth-of-type(1) {

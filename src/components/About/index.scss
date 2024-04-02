@@ -7,7 +7,7 @@
   background-size: cover; /* Cover the entire container with the image */
   background-position: center; /* Center the image within the container */
   top: 100px;
-  left: 1000px;
+  left: 1150px;
 
 }
 
@@ -16,7 +16,7 @@
   color: gold;
   position: absolute;
   margin-top: 475px;
-  margin-left: 975px;
+  left: 1125px;
 }
 
 .img-rit-container
@@ -39,7 +39,7 @@
   background-image: url('../../assets/images/FlagDR.png'); /* Specify the URL or path to the image */
   background-size: cover; /* Cover the entire container with the image */
   background-position: center; /* Center the image within the container */
-  margin-top: 1550px;
+  margin-top: 1500px;
   left: 1050px;
 }
 
@@ -47,7 +47,7 @@
   0% { background-image: url('../../assets/images/Hendrix1.jpg'); }
   20% { background-image: url('../../assets/images/whiplash.jpg'); }
   40% { background-image: url('../../assets/images/ATLA.jpg'); }
-  60% { background-image: url('../../assets/images/MCU.jpg'); }
+  60% { background-image: url('../../assets/images/microcontroller.jpg'); }
   80% { background-image: url('../../assets/images/AllthatMusicAcademy.jpg'); }
   100% { background-image: url('../../assets/images/Hendrix1.jpg'); }
 }
@@ -61,39 +61,8 @@
   background-position: center; /* Center the image within the container */
   margin-top: 2000px;
   left: 1250px;
-  animation: hobbiesAnimation 10s infinite; /* Adjust duration and iteration count as needed */
+  animation: hobbiesAnimation 20s infinite; /* Adjust duration and iteration count as needed */
 }
-
-.title-self-intro,
-.title-education,
-.title-skills,
-.title-personal,
-.title-hobbies
-{
-  font-size: 40px;
-  font-family: sans-serif;
-  color: gold;
-
-  ul
-  {
-    font-size: 25px;
-    font-family: sans-serif;
-    width: 100%;
-    margin-bottom: 10%;
-    li
-    {
-      font-size: 25px;
-      font-family: sans-serif;
-      width: 150%;
-
-      strong
-      {
-        color: gold;
-      }
-    }
-  }
-}
-
 
 .stage-cube-cont
 {
