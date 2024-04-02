@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Test from "./components/Test";
+import Microcontrollers from "./components/Microcontrollers";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
                   <Route index element={<Home />} />
                   <Route path={"about"} element={<About />} />
                   <Route path={"Contact"} element={<Contact />} />
+                  <Route path={"Microcontrollers"} element={<Microcontrollers />} />
                   <Route path={"Test"} element={<Test />} />
               </Route>
           </Routes>

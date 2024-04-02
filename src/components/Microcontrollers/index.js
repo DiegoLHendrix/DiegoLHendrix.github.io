@@ -1,10 +1,10 @@
-import './index.scss';
+import './index.scss'
+import {useEffect, useState} from "react";
 import AnimatedLetters from "../AnimatedLetters";
-import { useEffect, useState } from "react";
 
-const Test = () => {
+const Microcontrollers = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const strTest = "Test";
+    const strMicrocontrollers = "Microcontrollers";
 
     useEffect(() => {
         setTimeout(() => {
@@ -13,19 +13,20 @@ const Test = () => {
     }, []);
 
     return (
-        <div className={'container test-page'}>
+        <div className={'container microcontrollers-page'}>
             <div className={'text-zone'}>
                 <h1>
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={strTest.split("")}
+                        strArray={strMicrocontrollers.split("")}
                         idx={15}
                     />
                 </h1>
 
+
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Test;
+export default Microcontrollers

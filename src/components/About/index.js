@@ -141,6 +141,7 @@ const About = () => {
                                 <li>Moved to Massachusetts in 2010.</li>
                                 <li>Graduated from Malden Catholic High School in 2021.</li>
                                 <li>Started atteding Rochester Institute of Technology in 2021.</li>
+
                             </ul>
                         </p>
                     </h2>
@@ -154,9 +155,17 @@ const About = () => {
                         />
                         <p className={'text-about'}>
                             <ul>
-                                <li>Music</li>
-                                <li>Movies and TV</li>
-                                <li>Programming and problem solving</li>
+                                <li>Music:
+                                    <br/>Played guitar for 8 years
+                                    <br/>Take lessons at All that Music Academy in Stoneham, MA.
+                                </li>
+                                <li>Movies and TV
+                                    <br/>Favorite Move: Whiplash by Damien Chazelle.
+                                    <br/>Favorite Show: Avatar the Last Airbender.
+                                </li>
+                                <li>Programming and problem solving
+                                    <br/>
+                                </li>
                             </ul>
                         </p>
                     </h2>

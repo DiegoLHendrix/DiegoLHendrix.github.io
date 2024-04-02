@@ -34,20 +34,21 @@
 .img-flag-container
 {
   position: absolute;
-  width: 400px; /* Set the width of the container */
+  width: 600px; /* Set the width of the container */
   height: 400px; /* Set the height of the container */
   background-image: url('../../assets/images/FlagDR.png'); /* Specify the URL or path to the image */
   background-size: cover; /* Cover the entire container with the image */
   background-position: center; /* Center the image within the container */
-  margin-top: 1525px;
-  left: 1250px;
+  margin-top: 1550px;
+  left: 1050px;
 }
 
 @keyframes hobbiesAnimation {
   0% { background-image: url('../../assets/images/Hendrix1.jpg'); }
-  25% { background-image: url('../../assets/images/whiplash.jpg'); }
-  50% { background-image: url('../../assets/images/ATLA.jpg'); }
-  75% { background-image: url('../../assets/images/MCU.jpg'); }
+  20% { background-image: url('../../assets/images/whiplash.jpg'); }
+  40% { background-image: url('../../assets/images/ATLA.jpg'); }
+  60% { background-image: url('../../assets/images/MCU.jpg'); }
+  80% { background-image: url('../../assets/images/AllthatMusicAcademy.jpg'); }
   100% { background-image: url('../../assets/images/Hendrix1.jpg'); }
 }
 
@@ -78,7 +79,7 @@
     font-size: 25px;
     font-family: sans-serif;
     width: 100%;
-
+    margin-bottom: 10%;
     li
     {
       font-size: 25px;
