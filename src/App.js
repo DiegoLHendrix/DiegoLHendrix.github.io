@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Microcontrollers from "./components/Microcontrollers";
+import FinalProject from "./components/FinalProject";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
                   <Route path={"about"} element={<About />} />
                   <Route path={"Contact"} element={<Contact />} />
                   <Route path={"Microcontrollers"} element={<Microcontrollers />} />
+                  <Route path={"FinalProject"} element={<FinalProject />} />
               </Route>
           </Routes>
       </>
