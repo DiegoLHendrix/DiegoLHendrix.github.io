@@ -55,12 +55,12 @@
 .img-hobbies-container
 {
   position: absolute;
-  width: 400px; /* Set the width of the container */
-  height: 400px; /* Set the height of the container */
+  width: 600px; /* Set the width of the container */
+  height: 600px; /* Set the height of the container */
   background-size: cover; /* Cover the entire container with the image */
   background-position: center; /* Center the image within the container */
   margin-top: 2000px;
-  left: 1250px;
+  left: 1050px;
   animation: hobbiesAnimation 20s infinite; /* Adjust duration and iteration count as needed */
 }
 

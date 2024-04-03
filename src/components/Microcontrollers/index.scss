@@ -1,0 +1,26 @@
+// Styles for the container
+.vid-container {
+  position: relative;
+  width: 50%; // Set the width
+  height: auto; // Set the height
+  top: 125%; // Set the top position
+  left: 50%;
+}
+
+// Styles for the video
+.vid-hw6 {
+  width: 50%; // Set the width
+  height: auto; // Set the height
+  position: absolute; // Set the position
+  top: 50%; // Set the top position
+  left: 50%; // Set the left position
+  transform: translate(-50%, -50%); // Apply transform for centering
+}
+
+.mcu-text
+{
+  max-width: 125%;
+  margin-top: auto;
+  margin-bottom: 25%;
+}
+

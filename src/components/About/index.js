@@ -169,7 +169,8 @@ const About = () => {
                                 <br/>Favorite Show: Avatar the Last Airbender.
                             </li>
                             <li>Programming and problem solving
-                                <br/>
+                                <br/>I enjoy being challenged and having to learn new things to grow because it
+                                <br/>keeps me engaged and motivated.
                             </li>
                         </ul>
                     </p>
