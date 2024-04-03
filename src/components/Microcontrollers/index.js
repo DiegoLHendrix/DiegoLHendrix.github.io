@@ -198,7 +198,6 @@ const Microcontrollers = () => {
                 </h2>
 
                 <p className={'mcu-text'}>
-
                     <strong>Educational Objective:</strong><br/>
                     The educational objective of this lab was to investigate the use of IR sensing
                     with the QTRX and the MSP432. This objective was achieved by creating functions that provided IR
