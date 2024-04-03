@@ -42,7 +42,6 @@ const Home = () => {
                 <Link to={"/About"} className={'about-button'}>ABOUT ME</Link>
                 <Link to={"/Contact"} className={'contact-button'}>CONTACT ME</Link>
                 <Link to={"/Microcontrollers"} className={'microcontrollers-button'}>MICROCONTROLLERS</Link>
-                <Link to={"/Test"} className={'test-button'}>TEST</Link>
             </div>
             <Logo />
         </div>
