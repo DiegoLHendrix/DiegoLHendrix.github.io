@@ -39,8 +39,8 @@ const Home = () => {
                         idx={15}/>
                 </h1>
                 <h2>Embedded Software Engineer</h2>
-                {/*<Link to={"/About"} className={'about-button'}>ABOUT ME</Link>*/}
-                {/*<Link to={"/Contact"} className={'contact-button'}>CONTACT ME</Link>*/}
+                <Link to={"/About"} className={'about-button'}>ABOUT ME</Link>
+                <Link to={"/Contact"} className={'contact-button'}>CONTACT ME</Link>
                 <Link to={"/FinalProject"} className={'final-button'}>MICROS FINAL PROJECT</Link>
             </div>
             <Logo />
