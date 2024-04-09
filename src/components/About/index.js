@@ -165,7 +165,7 @@ const About = () => {
                                 <br/>Take lessons at All that Music Academy in Stoneham, MA.
                             </li>
                             <li>Movies and TV
-                                <br/>Favorite Move: Whiplash by Damien Chazelle.
+                                <br/>Favorite Movie: Whiplash by Damien Chazelle.
                                 <br/>Favorite Show: Avatar the Last Airbender.
                             </li>
                             <li>Programming and problem solving
