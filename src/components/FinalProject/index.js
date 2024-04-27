@@ -5,7 +5,7 @@ import Loader from "react-loaders";
 
 const FinalProject = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const strFinal = "Simple Security System"
+    const strFinal = "Security System"
 
     useEffect(() => {
         setTimeout(() => {
@@ -37,37 +37,58 @@ const FinalProject = () => {
                         <strong>Components:</strong><br/>
                         Components used in this project
                         <li>Hardware Interrupts</li>
-                        <li>Timers</li>
-                        <li>Arduino ADC</li>
+                        <li>TimerA</li>
+                        <li>ADC</li>
                         <li>Motion Sensor</li>
-                        <li>IR Sensing</li>
                         <li>Speaker</li>
                         <br/>
 
-                        <strong>Problems:</strong><br/>
-                        Problems faced with during the development of this project
-                        <li>Hardware Interrupts</li>
-                        <li>Timers</li>
-                        <li>Arduino ADC</li>
-                        <li>Motion Sensor</li>
-                        <li>IR Sensing</li>
-                        <li>Speaker</li>
+                        <strong>Overview:</strong><br/>
+                        <strong>MSP432</strong><br/>
+                        <li>Buzzer - TimerA:
+                            Would make a sound when detected a the magnetic latch sensed the magnet was
+                            missing.
+                        </li>
+
+                        <li>Magnetic latch - Hardware Interrupts:
+                            Using a magnet this sensor would send a signal to the MSP432 which would cause the buzzer to
+                            make an alarm sound. This would also trigger a hardware interrupt in the MSP432.
+                        </li>
                         <br/>
 
-                        <strong>Solutions:</strong><br/>
-                        Steps my partner and I took to solve the aforementioned problems
-                        <li>Hardware Interrupts</li>
-                        <li>Timers</li>
-                        <li>Arduino ADC</li>
-                        <li>Motion Sensor</li>
-                        <li>IR Sensing</li>
-                        <li>Speaker</li>
+                        <strong>ESP32 #1</strong><br/>
+                        <li>Connected to the MSP432 - Hardware Interrupt:
+                            When the MSP432 hardware interrupt was triggered it would send a signal to the first ESP32
+                            to let it know about the interrupt. This went both ways so if a hardware interrupt was
+                            triggered inside the ESP32 then it would send a signal to the MSP432.
+                        </li>
+                        <li>Keypad:
+                            This would be used to input a code into the first ESP32 to arm and disarm the security
+                            system. Using red and green leds the keypad would send a signal to the first ESP32 and turn
+                            on the red led when armed and green led when unarmed.
+                        </li>
                         <br/>
 
-                        <strong>Conclusion:</strong><br/>
+                        <strong>ESP32 #2:</strong><br/>
+                        <li>Wifi:
+                            Send text messages through wifi using a Whatsapp api called Callmebot. it would send a
+                            message
+                            "System Secure" when the security system was armed and "System Idle" when the system was
+                            unarmed.
+                        </li>
+                        <li>Motion sensing - ADC:
+                            Using an HC-SR501 PIR Sensor, if motion was detected then it would trigger a hardware
+                            interrupt
+                            in the second ESP32 which would send a signal to the MSP432.
+                        </li>
 
                     </p>
                 </div>
+
+                <div className={'img-project1-container'}/>
+                <div className={'img-project2-container'}/>
+                <div className={'img-project3-container'}/>
+                <div className={'img-project4-container'}/>
             </div>
             <Loader type={"pacman"} active/>
         </>
