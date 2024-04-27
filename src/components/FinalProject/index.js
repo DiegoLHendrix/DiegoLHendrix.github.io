@@ -38,7 +38,7 @@ const FinalProject = () => {
                         Components used in this project
                         <li>Hardware Interrupts</li>
                         <li>TimerA</li>
-                        <li>ADC</li>
+                        <li>Finite State Machines</li>
                         <li>Motion Sensor</li>
                         <li>Speaker</li>
                         <br/>
